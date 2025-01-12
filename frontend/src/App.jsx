@@ -1,12 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import React, { useState } from "react";
 import "./App.css";
 import SearchSpeaker from "./SearchSpeaker";
 import App1 from "./firstToLastName";
 import SpeakerProfile from "./SpeakerProfile";
 import Mithlesh from "./MithleshComponent";
 import Anjali from "./MithleshComponent";
+import AppHook from "./useStateHook";
+import ParentComponent from "./useStateHook2";
+import DashBoard from "./condnRendering";
 
 
 // function App() {
@@ -97,6 +98,12 @@ function App() {
       <App1 />
       <br />
       <SpeakerProfile />
+      <br />
+      <AppHook />
+      <br />
+      <ParentComponent />
+      <br />
+      <DashBoard />
     </div>
   );
 }
