@@ -18,6 +18,16 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+button{
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  /* background-color: #f8f8f8; */
+  cursor: pointer;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

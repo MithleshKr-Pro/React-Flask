@@ -7,12 +7,12 @@ const ParentComponent=()=>{
     return(
         <div>
             <p>Parent Count : {count}</p>
-            <childComponent count={count}/>
+            <ChildComponent count={count}/>
             <button onClick={handleIncrementByTen}>Increment</button>
         </div>
     );
 };
-const childComponent=({count})=>{
+const ChildComponent=({count})=>{
     return <p> Child Count : {count}</p>
 };
 export default ParentComponent;

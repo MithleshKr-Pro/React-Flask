@@ -3,11 +3,13 @@ import "./App.css";
 import SearchSpeaker from "./SearchSpeaker";
 import App1 from "./firstToLastName";
 import SpeakerProfile from "./SpeakerProfile";
-import Mithlesh from "./MithleshComponent";
-import Anjali from "./MithleshComponent";
+// import Mithlesh from "./MithleshComponent";
+// import Anjali from "./MithleshComponent";
 import AppHook from "./useStateHook";
 import ParentComponent from "./useStateHook2";
 import DashBoard from "./condnRendering";
+import PersonalisedLogin from "./condnRendering2";
+import UseEffectHook from "./useEffectHook";
 
 
 // function App() {
@@ -91,7 +93,8 @@ function App() {
         borderRadius: 20,
       }}
     >
-      <Mithlesh />
+      {/* <Mithlesh /> */}
+      <UseEffectHook />
       <br />
       <SearchSpeaker />
       <br />
@@ -104,6 +107,10 @@ function App() {
       <ParentComponent />
       <br />
       <DashBoard />
+      <br /> 
+      <PersonalisedLogin />
+      <br />
+
     </div>
   );
 }
