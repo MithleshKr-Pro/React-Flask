@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 const SearchSpeaker = () => {
     const [searchText, setSearchText] = useState('Mithlesh');
-    console.log(React.version);
+    // console.log(React.version);
 
 
     return (

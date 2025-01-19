@@ -4,4 +4,26 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://cat-fact.herokuapp.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
+  }
 })
+
+// vite.config.js
+// export default {
+//   server: {
+//     proxy: {
+//       '/api': {
+//         target: 'https://cat-fact.herokuapp.com',
+//         changeOrigin: true,
+//         rewrite: (path) => path.replace(/^\/api/, '')
+//       }
+//     }
+//   }
+// }

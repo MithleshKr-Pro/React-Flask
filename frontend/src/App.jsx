@@ -10,6 +10,7 @@ import ParentComponent from "./useStateHook2";
 import DashBoard from "./condnRendering";
 import PersonalisedLogin from "./condnRendering2";
 import UseEffectHook from "./useEffectHook";
+import UseRefHook from "./useRef";
 
 
 // function App() {
@@ -94,6 +95,8 @@ function App() {
       }}
     >
       {/* <Mithlesh /> */}
+      <UseRefHook />
+      <br />
       <UseEffectHook />
       <br />
       <SearchSpeaker />
